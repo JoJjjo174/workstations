@@ -1,5 +1,6 @@
 package me.jojjjo147.workstations.commands;
 
+import org.bukkit.Sound;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
@@ -17,6 +18,7 @@ public class WorkbenchCommand implements CommandExecutor {
 
         Player player = (Player) commandSender;
         player.openWorkbench(player.getLocation(), true);
+        player.playSound(player, Sound.BLOCK_ANVIL_USE, 1, 1);
         return true;
     }
 }
