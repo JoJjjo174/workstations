@@ -1,6 +1,7 @@
 package me.jojjjo147.workstations;
 
 import me.jojjjo147.workstations.commands.EnchantingCommand;
+import me.jojjjo147.workstations.commands.EnderChestCommand;
 import me.jojjjo147.workstations.commands.WorkbenchCommand;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -10,6 +11,7 @@ public final class Workstations extends JavaPlugin {
     public void onEnable() {
         getCommand("craft").setExecutor(new WorkbenchCommand());
         getCommand("enchanting").setExecutor(new EnchantingCommand());
+        getCommand("enderchest").setExecutor(new EnderChestCommand());
     }
 
     @Override

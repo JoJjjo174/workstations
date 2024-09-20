@@ -14,6 +14,13 @@ commands:
     usage: /<command>
     description: Opens an enchanting table
     permission: workstations.enchant
+  enderchest:
+    usage: /<command> [player]
+    description: Open your enderchest
+    permission: workstations.enderchest
+    aliases:
+      - ec
+      - echest
 permissions:
   workstations.craft:
     default: true
@@ -21,3 +28,9 @@ permissions:
   workstations.enchant:
     default: true
     description: Use the /enchanting command
+  workstations.enderchest:
+    default: true
+    description: Use the /enderchest command
+  workstations.open_other_enderchests:
+    default: op;
+    description: Open other player's enderchests
