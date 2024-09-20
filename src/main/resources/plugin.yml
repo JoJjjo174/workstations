@@ -2,3 +2,15 @@ name: workstations
 version: '1.0-SNAPSHOT'
 main: me.jojjjo147.workstations.Workstations
 api-version: '1.21'
+commands:
+  craft:
+    usage: /<command>
+    description: Opens a workbench
+    permission: workstations.craft
+    aliases:
+      - workbench
+      - wb
+permissions:
+  workstations.craft:
+    default: true
+    description: Use the /craft command
