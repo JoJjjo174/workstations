@@ -1,0 +1,4 @@
+name: workstations
+version: '1.0-SNAPSHOT'
+main: me.jojjjo147.workstations.Workstations
+api-version: '1.21'
