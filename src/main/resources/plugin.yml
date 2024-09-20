@@ -10,7 +10,14 @@ commands:
     aliases:
       - workbench
       - wb
+  enchanting:
+    usage: /<command>
+    description: Opens an enchanting table
+    permission: workstations.enchant
 permissions:
   workstations.craft:
     default: true
     description: Use the /craft command
+  workstations.enchant:
+    default: true
+    description: Use the /enchanting command
